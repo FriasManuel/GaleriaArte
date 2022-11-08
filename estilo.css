@@ -1,0 +1,166 @@
+/* 
+OK_ Todas las imágenes de la web deben tener el mismo alto y ancho.
+OK_Una de las imágenes debe tener las propiedades padding y padding-lado (donde 'lado' es alguno de los lados del box model), distintas al resto de las imágenes.
+OK_Una de las imágenes debe tener las propiedades margin y margin-lado (donde 'lado' es alguno de los lados del box model), distintas al resto de las imágenes. 
+OK_El título de la página web debe estar centrado con margin. 
+OK_Todas las imágenes deben tener el mismo borde. 
+OK_La propiedad border-top debe estar utilizada al menos una vez en la web. 
+OK_La propiedad border-bottom-color debe estar utilizada al menos una  vez en la web.  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Ananda';
+    src: url('font/Ananda\ Personal\ Use.ttf');
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('font/WorkSans-VariableFont_wght.ttf');
+}
+
+body {
+    background-color: #263238;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18vh;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: 'Ananda';
+    font-size: xx-large;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-family: 'WorkSans';
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+header {
+    margin-bottom: 400px;
+}
+
+nav {
+    margin-left: 30px;
+    float: right;
+    /*queria ponerlo sobre el margen Derecho pero no se porque no lo hace*/
+    position: fixed;
+    /* top: 200px;
+    right: 5px;   VISTO EN LA CLASE 11 */
+    cursor: pointer;
+    background-color: #4f5b62;
+    border-style: dotted;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #000a12;
+    padding: 10px 25px;
+    line-height: 1.8;
+    opacity: 0.5;
+}
+
+li {
+    list-style-image: url(Imagenes/iconoListaFotografos\(25px\).png);
+    margin-left: 25px;
+    vertical-align: middle;
+}
+
+#ref {
+    font-family: 'WorkSans';
+    font-size: 15px;
+    color: #c1d5e0;
+    text-decoration: none;
+    text-align: justify;
+    margin-left: 5px;
+    margin-bottom: 25px;
+    vertical-align: text-bottom;
+}
+
+li:hover {
+    color: #f2f2f2;
+    background: #6e6e6e;
+}
+
+#AgustinaPrato,
+#GermanRiobo,
+#SergioArchilla,
+#ManuelFrias {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#AgustinaPrato,
+#GermanRiobo {
+    background-color: #000a12;
+}
+
+#Img_ {
+    width: 520px;
+    height: 520px;
+    margin: 5px;
+    border: #000a12;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #000a12;
+}
+
+#Img_RT {
+    width: 520px;
+    height: 520px;
+    margin: 5px;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #000a12;
+}
+
+#Logo_IG {
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c1d5e0;
+    font-style: normal;
+    text-decoration: none;
+    vertical-align: text-bottom;
+    margin-top: 20px;
+}
+
+#Logo_Unahur {
+    margin: 10px;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #000a12;
+    line-height: 1.5;
+    text-align: center;
+    color: #6e6e6e;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    border-top: 2mm groove #c1d5e0;
+    padding-bottom: 30px;
+    margin-top: 60px;
+}
